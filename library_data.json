@@ -1,0 +1,41 @@
+{
+    "name": "SMIU",
+    "members": [
+        {
+            "name": "ghufran",
+            "ID": 1,
+            "borrowedBooks": []
+        },
+        {
+            "name": "sohaib",
+            "ID": 2,
+            "borrowedBooks": [
+                2
+            ]
+        },
+        {
+            "name": "farhan",
+            "ID": 3,
+            "borrowedBooks": []
+        },
+        {
+            "name": "ashir",
+            "ID": 4,
+            "borrowedBooks": []
+        }
+    ],
+    "books": {
+        "1": {
+            "title": "harry",
+            "author": "ashir",
+            "is_borrowed": false,
+            "borrowed_by": null
+        },
+        "2": {
+            "title": "java",
+            "author": "Ghufran",
+            "is_borrowed": true,
+            "borrowed_by": 2
+        }
+    }
+}

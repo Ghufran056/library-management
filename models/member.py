@@ -1,10 +1,10 @@
 class Member:
-    def __init__(self, name, member_id):
+    def __init__(self, name, ID, borrowedBooks=None):
         self.name = name
-        self.ID = member_id
-        self.borrowedBooks = []
+        self.ID = ID
+        self.borrowedBooks = borrowedBooks if borrowedBooks is not None else []
 
-    def borrowedBooks(self):
+    def borrowed_books(self):
         if self.borrowedBooks:
             print(f"{self.name} has borrowed the following books:")
             for i, book in enumerate(self.borrowedBooks, start=1):
